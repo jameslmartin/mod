@@ -1,6 +1,7 @@
 body {
 	font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
 	color: #2E2C2F;
+	text-align: justify;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -25,20 +26,40 @@ a:active {
 .flex-container {
 	display: flex;
   flex-flow: column wrap;
+	margin: 20px;
+}
+
+.flex-item {
+	flex: 1 1 auto;
 }
 
 #banner {
+	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
+	flex: 0 1 auto;
+	align-items: baseline;
 	justify-content: space-between;
-	padding-left: 20px;
-	padding-right: 20px;
+	align-content: space-between;
 }
 
-#banner a {
+#menu ul{
+	list-style: none;
+	padding-left: 0px;
+	justify-content: space-between;
+}
+
+.menu-page {
+	margin-right: 10px;
+}
+
+#post-list {
+	padding-inline-start: 20px;
+}
+
+#sitename {
+	text-align: left;
+}
+
+#sitename a {
 	text-decoration: underline;
-}
-
-#banner.flex-item {
-	flex: 1 1 auto;
 }

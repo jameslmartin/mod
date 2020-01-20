@@ -34,13 +34,13 @@
 </head>
 
 <body id="index" class="flex-container">
-        <div id="banner" class="flex-container">
-          <div class="flex-item">
+        <div id="banner">
+          <div id="sitename">
                   <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
                   <strong>{{ SITESUBTITLE }}</strong>
           </div><!-- /#banner -->
 
-          <nav id="menu" class="flex-item"><ul>
+          <nav id="menu"><ul>
           {% for title, link in MENUITEMS %}
               <li><a href="{{ link }}">{{ title }}</a></li>
           {% endfor %}
@@ -59,7 +59,7 @@
         {% block content %}
 
         {% endblock %}
-        <hr width="66%" align="left">
+        <hr width="66%" align="left" margin-left="10px">
         <footer id="contentinfo" class="flex-item-footer">
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
