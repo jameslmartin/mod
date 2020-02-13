@@ -61,10 +61,15 @@
         {% endblock %}
         <hr width="66%" align="left" margin-left="10px">
         <footer id="contentinfo" class="flex-item-footer">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <small>
+                Find me on...
+                {% for social, link in LINKS %}
+                <span class="social"><a href="{{ link }}">{{ social }}</a></span>
+                {% endfor %}
+                </br>
+                <i>Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.</i>
+                <small>
         </footer><!-- /#contentinfo -->
 </body>
 </html>
