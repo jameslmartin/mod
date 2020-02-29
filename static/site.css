@@ -2,6 +2,15 @@ body {
 	font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
 	color: #2E2C2F;
 	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
